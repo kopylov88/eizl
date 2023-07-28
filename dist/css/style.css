@@ -245,19 +245,13 @@ body.no-scroll {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid #fff;
+  border-right: 2px solid transparent;
   animation: typing 3s steps(40, end);
 }
 
 @keyframes typing {
   from {
     width: 0;
-  }
-}
-
-@keyframes cursor {
-  50% {
-    border-color: transparent;
   }
 }
 
