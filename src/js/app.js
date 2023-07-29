@@ -267,5 +267,23 @@ validator
     event.target.reset();
   });
 
-  
+const swiftUpElements = document.querySelectorAll('.swift-up-text');
+swiftUpElements.forEach(elem => {
+  const elements = elem.textContent.split(' ');
+  const words = elements.filter(function (el) {
+    return el !== '';
+  })
+  elem.innerHTML = '';
+  words.forEach((el, index) => {
+    words[index] = `<span><i>${words[index]}</i></span>`;
+  });
+
+  elem.innerHTML = words.join(' ');
+  const children = document.querySelectorAll('span > i');
+  children.forEach((node, index) => {
+    node.style.animationDelay = `${(index + 3) * .1}s`; //Задержка перед началом анимации
+  });
+});
+
+
 
