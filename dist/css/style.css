@@ -244,7 +244,6 @@ body.no-scroll {
 .hero__text span {
   display: inline-block;
   overflow: hidden;
-  animation: 0.3s swift-up forwards;
 }
 
 .hero__text i {
@@ -489,6 +488,11 @@ textarea:focus:-ms-input-placeholder {
 .hero__text {
   font-size: 24px;
   margin-bottom: 30px;
+  opacity: 0;
+}
+
+.hero__text.active {
+  opacity: 1;
 }
 
 .hero__descr {

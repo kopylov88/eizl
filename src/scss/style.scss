@@ -120,6 +120,10 @@
   &__text {
     font-size: 24px;
     margin-bottom: 30px;
+    opacity: 0;
+    &.active {
+      opacity: 1;
+    }
   }
 
   &__descr {
