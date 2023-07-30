@@ -241,12 +241,12 @@ body.no-scroll {
   border-radius: 15px;
 }
 
-.hero__text span {
+.swift-up-text span {
   display: inline-block;
   overflow: hidden;
 }
 
-.hero__text i {
+.swift-up-text i {
   font-style: normal;
   position: relative;
   top: 80px;
